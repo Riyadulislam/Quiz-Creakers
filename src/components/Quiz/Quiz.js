@@ -4,8 +4,9 @@ import Startquiz from '../Startquiz/Startquiz';
 
 const Quiz = () => {
     const loader=useLoaderData()
+   
     const quizs=loader.data.questions
-        console.log(quizs)
+       
     
     return (
         <div>
