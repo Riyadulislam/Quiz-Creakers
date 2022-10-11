@@ -6,6 +6,8 @@ import Topics from './components/Topics/Topics';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
+import Quiz from './components/Quiz/Quiz';
+
 
 
 
@@ -17,12 +19,22 @@ function App() {
       children:[
         {
           path:'/',
+          loader:()=>{
+            return fetch('https://openapi.programming-hero.com/api/quiz')
+          },
           element:<Home></Home>
 
         },
         {
         path:'/topics',
         element:<Topics></Topics>
+      },
+      {
+        path:'/course/:courseId',
+        loader: ({ params }) => {
+          return fetch(`https://openapi.programming-hero.com/api/quiz/${params.courseId}`);
+        },
+        element:<Quiz></Quiz>
       },
       {
         path:'/statistics',
