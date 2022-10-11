@@ -5,7 +5,7 @@ import toast from  'react-hot-toast'
 
 const Option = ({option,correctAnswer}) => {
     const submitAnswer=(correctAnswer)=>{
-      console.log(correctAnswer)
+     
       const writeAns=option;
       if(writeAns==correctAnswer){
         toast.success('Your Answer is Correct !');
@@ -16,6 +16,7 @@ const Option = ({option,correctAnswer}) => {
     }
     return (
         <div class="border  hover:bg-violet-600 border-blue-600 m-4 p-4">
+         
           
            <button class=' hover:bg-violet-600'onClick={()=>submitAnswer(correctAnswer)}>  <li>{option}</li></button>
          

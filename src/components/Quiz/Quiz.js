@@ -12,9 +12,12 @@ const Quiz = () => {
         <div>
             <h1 class="text-gray-900 font-bold mt-12">Quiz Of   {loader.data.name}</h1>
             <div>
+               
             {
                 quizs.map(quiz=><Startquiz  key={quiz.id}quiz={quiz}></Startquiz>)
+                
             }
+          
             </div>
         </div>
     );
