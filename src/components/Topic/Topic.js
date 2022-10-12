@@ -7,11 +7,11 @@ const Topic = ({data}) => {
     const {id,name,logo}=data
     return (
         <div>
-             <div class="border border-gray-900 m-5 p-7 bg-gray-900">
+             <div class="border border-gray-900 m-12 p-7 bg-gray-900 mt-12">
             <img src={logo} alt="" />
             <div class="flex justify-between mt-2">
-            <h1 class="text-gray-100">{name}</h1>
-            <button class="border p-1 text-gray-100">
+            <h1 class="text-gray-100 font-bold">{name}</h1>
+            <button class="border p-1 text-blue-500 font-bold">
                 <Link to={`/course/${id}`}>Start Prectise   <FontAwesomeIcon icon={faArrowRight} /></Link>
             </button>
             </div>

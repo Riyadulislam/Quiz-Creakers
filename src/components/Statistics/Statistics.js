@@ -13,8 +13,8 @@ const Statistics = () => {
     
     return (
         <div>
-          <h1 class="text-center font-bold text-2xl md:mt-5 mt-64">Showing total Question Statistics</h1>
-                 <div style={{ width: '100%', height: 300 }}>
+          <h1 class="text-center font-bold text-2xl md:mt-10 mt-64 text-blue-500">Showing total Question Statistics</h1>
+                 <div class=" md:mt-20" style={{ width: '100%', height: 300 }}>
         <ResponsiveContainer>
           <PieChart>
             <Pie dataKey="total" data={data} fill="#8884d8" label />

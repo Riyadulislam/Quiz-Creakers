@@ -22,7 +22,7 @@ const Startquiz = ({quiz,idx}) => {
             </div>
             
           <div>
-            <div class="flex flex-col lg:flex-row justify-between">
+            <div class="flex flex-col lg:flex-row justify-between font-bold text-blue-500">
            <h1 class="text-2xl">Quiz :{idx} {question.slice(3,-4)}</h1>  
            
            </div>

@@ -14,8 +14,8 @@ const Home = () => {
           
           <div class="flex" >
             <div class="mt-8 mx-4">
-            <h1 class="font-bold text-2xl text-blue-400 text-center"> Learning Online Becomes Easier</h1>
-            <h1 class="text-blue-400">Academy is a perfect theme for selling and sharing your knowledge online.Try to Complete all Quiz.it's Build up your knowledge. </h1>      
+            <h1 class="font-bold text-2xl text-blue-500 text-center"> Learning Online Becomes Easier</h1>
+            <h1 class="text-blue-500 text-center mt-4 text-xl">Academy is a perfect theme for selling and sharing your knowledge online.Try to Complete all Quiz.it's Build up your knowledge. </h1>      
             </div>
              
                <img class="w-1/2"

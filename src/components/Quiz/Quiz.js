@@ -11,7 +11,7 @@ const Quiz = () => {
     
     return (
         <div>
-            <h1 class="text-gray-900 font-bold mt-12 text-center text-2xl">Quiz Of   {loader.data.name}</h1>
+            <h1 class="text-blue-500 font-bold mt-12 text-center text-2xl">Quiz Of   {loader.data.name}</h1>
             <div>
                
             {
