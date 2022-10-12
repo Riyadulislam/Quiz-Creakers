@@ -18,7 +18,7 @@ const Home = () => {
             <h1 class="text-blue-400">Academy is a perfect theme for selling and sharing your knowledge online.Try to Complete all Quiz.it's Build up your knowledge. </h1>      
             </div>
              
-               <img
+               <img class="w-1/2"
             src="https://tse1.mm.bing.net/th?id=OIP.ujjx79IwfDCp0QzBUBgD7AHaEs&pid=Api&P=0"
             alt="example"
           />
