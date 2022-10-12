@@ -6,6 +6,7 @@ const Quiz = () => {
     const loader=useLoaderData()
    
     const quizs=loader.data.questions
+   
        
     
     return (
@@ -14,7 +15,7 @@ const Quiz = () => {
             <div>
                
             {
-                quizs.map(quiz=><Startquiz  key={quiz.id}quiz={quiz}></Startquiz>)
+                quizs.map((quiz,idx)=><Startquiz  key={idx} idx={idx+1} quiz={quiz}></Startquiz>)
                 
             }
           

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight,faEye} from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight,faEye,faPen} from '@fortawesome/free-solid-svg-icons'
+import './Header.css'
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
@@ -15,8 +16,10 @@ export const Header = () => {
               title="Company"
               class="inline-flex items-center "
             >
+              <div className='icon'>
             
-              <FontAwesomeIcon icon={faEye} />
+              <FontAwesomeIcon class="text-gray-100"  icon={faPen} />
+              </div>
              
               <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
                TEST QUIZ
@@ -67,19 +70,7 @@ export const Header = () => {
                 </Link>
               </li>
             </ul>
-            {/* <Link
-              href="/"
-              aria-label="Company"
-              title="Company"
-              class="inline-flex items-center lg:mx-auto"
-            >
             
-              <FontAwesomeIcon icon={faEye} />
-             
-              <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-               TEST QUIZ
-              </span>
-            </Link> */}
         
             <div class="ml-auto lg:hidden">
               <button
@@ -114,23 +105,12 @@ export const Header = () => {
                           title="Company"
                           class="inline-flex items-center"
                         >
-                          <svg
-                            class="w-8 text-deep-purple-accent-400"
-                            viewBox="0 0 24 24"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeMiterlimit="10"
-                            stroke="currentColor"
-                            fill="none"
-                          >
-                            <rect x="3" y="1" width="7" height="12" />
-                            <rect x="3" y="17" width="7" height="6" />
-                            <rect x="14" y="1" width="7" height="6" />
-                            <rect x="14" y="11" width="7" height="12" />
-                          </svg>
+                         <div className='icon'>
+            
+            <FontAwesomeIcon class="text-gray-900"  icon={faPen} />
+            </div>
                           <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                            Quiz Creakers
+                            TEST QUIZ
                           </span>
                         </Link>
                       </div>
@@ -152,9 +132,19 @@ export const Header = () => {
                     </div>
                     <nav>
                       <ul class="space-y-4">
-                        <li>
+                      <li>
                           <Link
                             to="/"
+                            aria-label="Our product"
+                            title="Our product"
+                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          >
+                           Home
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/topics"
                             aria-label="Our product"
                             title="Our product"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -164,7 +154,7 @@ export const Header = () => {
                         </li>
                         <li>
                           <Link
-                            to="/ Statistics"
+                           to="/statistics"
                             aria-label="Our product"
                             title="Our product"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"

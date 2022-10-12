@@ -2,8 +2,8 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div>
-            <h1 class="font-bold text-2xl mt-5 mx-8"> Answering 3 question</h1>
+        <div class="mt-64 md:mt-5">
+            <h1 class="font-bold text-2xl mt-5 mx-8 text-center"> Answering 3 question</h1>
             <div class="border-4 border-indigo-500/100 m-10 p-5">
             <h1 class="text-blue-600 font-bold"> What is the purpose of React Router?</h1>
             <p>React Router is a standard library system built on top of the React and used to

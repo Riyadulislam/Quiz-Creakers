@@ -10,7 +10,7 @@ const Home = () => {
     
     
     return (
-        <div>
+        <div class="mt-64 md:mt-8">
           
           <div class="flex" >
             <div class="mt-8 mx-4">

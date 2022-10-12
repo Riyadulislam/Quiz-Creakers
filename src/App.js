@@ -55,7 +55,11 @@ function App() {
     },
     {
       path:'*',
-      element:<h1 class="text-center mt-8 font-bold">Not Found 404</h1>
+      element:<div class="text-center mt-8 font-bold">
+        <h1 >Not Found 404</h1>
+        <h1>Oops! You're lost.
+          The page you are looking for was not found</h1>
+      </div>
     }
    ])
     
