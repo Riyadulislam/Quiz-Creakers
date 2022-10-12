@@ -1,13 +1,13 @@
 import React from 'react';
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
-const Course = ({course}) => {
-  
-    const {id,name,logo}=course
+const Topic = ({data}) => {
+    const {id,name,logo}=data
     return (
-        <div class="border border-gray-900 m-5 p-7 bg-gray-900">
+        <div>
+             <div class="border border-gray-900 m-5 p-7 bg-gray-900">
             <img src={logo} alt="" />
             <div class="flex justify-between mt-2">
             <h1 class="text-gray-100">{name}</h1>
@@ -18,7 +18,10 @@ const Course = ({course}) => {
            
        
         </div>
+            
+            
+        </div>
     );
 };
 
-export default Course;
+export default Topic;

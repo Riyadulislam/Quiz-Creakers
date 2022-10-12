@@ -15,10 +15,10 @@ const Option = ({option,correctAnswer}) => {
       }
     }
     return (
-        <div class="border  hover:bg-violet-600 border-blue-600 m-4 p-4">
+        <div class="border  hover:bg-violet-600 border-blue-600 m-4 p-4" onClick={()=>submitAnswer(correctAnswer)}>
          
           
-           <button class=' hover:bg-violet-600'onClick={()=>submitAnswer(correctAnswer)}>  <li>{option}</li></button>
+           <button class=' hover:bg-violet-600'>  <li>{option}</li></button>
          
         </div>
     );

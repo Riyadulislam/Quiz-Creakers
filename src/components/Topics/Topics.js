@@ -1,12 +1,21 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import Topic from '../Topic/Topic';
 
 
 
 const Topics = () => {
+    const loader=useLoaderData()
+    const datas=loader.data
     return (
         <div>
             <h1>this is topic</h1>
-          
+            <div class="flex items-center flex-col md:flex-row justify-center">
+            {
+                datas.map(data=><Topic key={data.id}data={data}></Topic>)
+            }
+            </div>
+         
         </div>
     );
 };

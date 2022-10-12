@@ -12,16 +12,23 @@ const Home = () => {
     return (
         <div>
           
-          <div
-             class="bg_image"
-            >
-                <h1>This is online Quiz Course.Through This Course You Justify Your Knowledge</h1>
-                <div class="flex items-center justify-center mt-20">
+          <div class="flex" >
+            <div class="mt-8 mx-4">
+            <h1 class="font-bold text-2xl text-blue-400 text-center"> Learning Online Becomes Easier</h1>
+            <h1 class="text-blue-400">Academy is a perfect theme for selling and sharing your knowledge online.Try to Complete all Quiz.it's Build up your knowledge. </h1>      
+            </div>
+             
+               <img
+            src="https://tse1.mm.bing.net/th?id=OIP.ujjx79IwfDCp0QzBUBgD7AHaEs&pid=Api&P=0"
+            alt="example"
+          />
+            </div>
+               <div class="flex items-center flex-col md:flex-row justify-center">
+
                {
                 courses.map(course=><Course key={course.id} course={course}></Course>)
               
                }
-               </div>
           </div>
          
         </div>

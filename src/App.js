@@ -28,6 +28,9 @@ function App() {
         },
         {
         path:'/topics',
+        loader:()=>{
+          return fetch('https://openapi.programming-hero.com/api/quiz')
+        },
         element:<Topics></Topics>
       },
       {
@@ -39,6 +42,9 @@ function App() {
       },
       {
         path:'/statistics',
+        loader:()=>{
+        return  fetch('https://openapi.programming-hero.com/api/quiz')
+        },
         element:<Statistics></Statistics>
       },
       {
@@ -46,8 +52,13 @@ function App() {
          element:<Blog></Blog>
       }
     ]
+    },
+    {
+      path:'*',
+      element:<h1 class="text-center mt-8 font-bold">Not Found 404</h1>
     }
    ])
+    
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>

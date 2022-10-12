@@ -1,26 +1,37 @@
 import React from 'react';
 import Option from '../Option/Option';
 import toast from  'react-hot-toast'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 const Startquiz = ({quiz}) => {
-     const {question,options,correctAnswer}=quiz
+   
+     const {question,options,correctAnswer,id}=quiz
      const showingAnswer=(correctAnswer)=>{
         toast.success(correctAnswer);
      }
   
     return (
-        <div class="border border-blue-600 mx-80 m-10 p-10">
-
-
-            <div class="flex justify-between">
-           <h1>{question}</h1>  
-           <button class=' hover:bg-violet-600 bg-blue-300' onClick={()=>showingAnswer(correctAnswer)}>correct Answer</button>
+        
+       
+        <div class="border border-blue-600 p-12 lg:w-2/4 flex flex-col justify-center mx-auto">
+            <div class="ml-auto"> 
+            <button class=' hover:bg-violet-600 rounded-full' onClick={()=>showingAnswer(correctAnswer)}><FontAwesomeIcon icon={faEye} /></button>
+            
+            </div>
+            
+          <div>
+            <div class="flex flex-col lg:flex-row justify-between">
+           <h1 class="text-2xl">{question.slice(3,-4)}</h1>  
+           
            </div>
          
        
            {
             options.map((option,idx)=><Option  key={idx}option={option} correctAnswer={correctAnswer}></Option>)
            }
+           </div>
+        
         </div>
     );
 };

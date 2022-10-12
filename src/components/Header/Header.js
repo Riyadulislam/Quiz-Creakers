@@ -1,12 +1,28 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight,faEye} from '@fortawesome/free-solid-svg-icons'
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
     return (
       <div class="bg-gray-900">
-        <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-          <div class="relative flex grid items-center grid-cols-2 lg:grid-cols-3">
+         <div class="px-4 py-5  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+          <div class="relative flex grid items-center grid-cols-2 lg:grid-cols-2">
+         <Link
+              href="/"
+              aria-label="Company"
+              title="Company"
+              class="inline-flex items-center "
+            >
+            
+              <FontAwesomeIcon icon={faEye} />
+             
+              <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
+               TEST QUIZ
+              </span>
+            </Link>
+       
             <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
         
@@ -16,7 +32,7 @@ export const Header = () => {
           title="Our product"
           class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
         >
-   Home
+           Home
         </Link>
       </li>
               <li>
@@ -27,7 +43,7 @@ export const Header = () => {
                   title="Our product"
                   class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
-           Topic
+         Topic
                 </Link>
               </li>
               <li>
@@ -37,7 +53,7 @@ export const Header = () => {
                   title="Our product"
                   class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
-          Statistics
+           Statistics
                 </Link>
               </li>
               <li>
@@ -51,31 +67,19 @@ export const Header = () => {
                 </Link>
               </li>
             </ul>
-            <Link
+            {/* <Link
               href="/"
               aria-label="Company"
               title="Company"
               class="inline-flex items-center lg:mx-auto"
             >
-              <svg
-                class="w-8 text-teal-accent-400"
-                viewBox="0 0 24 24"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                stroke="currentColor"
-                fill="none"
-              >
-                <rect x="3" y="1" width="7" height="12" />
-                <rect x="3" y="17" width="7" height="6" />
-                <rect x="14" y="1" width="7" height="6" />
-                <rect x="14" y="11" width="7" height="12" />
-              </svg>
+            
+              <FontAwesomeIcon icon={faEye} />
+             
               <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-           Quiz Creakers
+               TEST QUIZ
               </span>
-            </Link>
+            </Link> */}
         
             <div class="ml-auto lg:hidden">
               <button
