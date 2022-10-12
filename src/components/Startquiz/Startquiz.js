@@ -9,7 +9,7 @@ const Startquiz = ({quiz,idx}) => {
    
      const {question,options,correctAnswer,id}=quiz
      const showingAnswer=(correctAnswer)=>{
-        toast.success(correctAnswer);
+        toast.success(`Correct Answer::${correctAnswer}`);
      }
   
     return (
