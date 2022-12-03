@@ -6,7 +6,7 @@ const Blog = () => {
             <h1 class="font-bold text-2xl mt-5 mx-8 text-center text-blue-500"> Answering 3 question</h1>
             <div class="border-4 border-indigo-500/100 m-10 p-5">
             <h1 class="text-blue-600 font-bold"> What is the purpose of React Router?</h1>
-            <p>React Router is a standard library system built on top of the React and used to
+            <p>React Router is a standard library system built  top of the React and used to
                  create routing in the React application using React Router Package. It
                   provides the synchronous URL on the browser with data that will be
                    displayed on the web page</p>
